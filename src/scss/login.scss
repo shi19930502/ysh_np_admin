@@ -1,0 +1,151 @@
+//新的登录页
+.page-login {
+    .new_login {
+        min-width: 1200px;
+        .header {
+            display: flex;
+            justify-content: space-around;
+            img {
+                display: block;
+            }
+            .header_left {
+                width: 332px;
+                height: 59px;
+            }
+            .header_right {
+                width: 383px;
+                height: 69px;
+            }
+        }
+        .content {
+            width: 100%;
+            background: #3C8DBC;
+            //          display: flex;
+            //          align-items: center;
+            .login_form {
+                width: 890px;
+                height: 590px;
+                margin: auto;
+                background: url("../../lib/img/loginImg/new1.png") no-repeat;
+                background-size: contain;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                .loginform {
+                    padding: 35px 30px;
+                }
+                .form_content{
+                    width: 350px;
+                    overflow: hidden;
+                    input{
+                        height: 40px;
+                    }
+                    h1{
+                        font-weight: bold;
+                    }
+                    .verifiImg {
+                        width: 160px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        input{
+//                          background-color:white;
+                            text-indent: 2px;
+                        }
+                        float: left;
+                    }
+                    .yzm{
+                        float: right;
+                        img{
+                            display: block;
+                            border: 1px solid #e6e7e9;
+                        }
+                    }
+                    .form_bottom{
+                        span{
+                            cursor: pointer;
+                            color: #6c6c6c;
+                            &:hover{
+                                color: #3c8dbc;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .biaoqian {
+        width: 886px;
+        height: 73px;
+        margin: 0 auto 10px;
+        li {
+            width: 33%;
+            height: 73px;
+            float: left;
+            background: url("../../lib/img/loginImg/CanOnlyProduce.png");
+        }
+        li:nth-child(2) {
+            background: url("../../lib/img/loginImg/electronicClearing.png");
+        }
+        li:nth-child(3) {
+            background: url("../../lib/img/loginImg/traceability.png");
+        }
+    }
+    footer {
+        min-width: 1200px;
+    }
+    @media screen and(max-width: 768px) {
+        .new_login {
+            min-width: inherit;
+            width: 100%;
+            .header {
+                display: block;
+                .header_left {
+                    width: 332px;
+                    height: 59px;
+                    margin: auto;
+                }
+                .header_right {
+                    width: 383px;
+                    height: 69px;
+                    margin: auto;
+                }
+            }
+            .content {
+                .login_form {
+                    width: 100%;
+                    height: 485px;
+                    justify-content: center;
+                    background: url("../../lib/img/loginImg/new2.png") no-repeat;
+                    background-size: contain;
+                    
+                }
+            }
+        }
+        .biaoqian {
+            width: 100%;
+            height: inherit;
+            overflow: hidden;
+            li {
+                width: 296px;
+                height: 73px;
+                margin: auto;
+                float: none;
+                background: url("../../lib/img/loginImg/CanOnlyProduce.png");
+            }
+            li:nth-child(2) {
+                background: url("../../lib/img/loginImg/electronicClearing.png");
+            }
+            li:nth-child(3) {
+                background: url("../../lib/img/loginImg/traceability.png");
+            }
+        }
+        footer {
+            min-width: inherit;
+        }
+
+    }
+
+}
